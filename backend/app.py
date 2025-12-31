@@ -115,7 +115,7 @@ def delete_employee(id):
 
     db.session.delete(employee)
     db.session.commit()
-    return jsonify({"message": "Employee deleted!!!!!!!"})
+    return jsonify({"message": "Employee deleted"})
 
 # Placement Routes
 @app.route('/api/placements', methods=['GET'])
